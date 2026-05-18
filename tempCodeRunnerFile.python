@@ -1,0 +1,12 @@
+import ctypes
+import os
+
+lib_path = os.path.abspath("libcalc_backend.so")
+print("Trying to load:", lib_path)
+
+try:
+    lib = ctypes.CDLL(lib_path)
+    print("Library loaded successfully!")
+    print("Test add:", lib.add(2.0, 3.0))
+except OSError as e:
+    print("Failed to load library:", e)
