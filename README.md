@@ -1,1 +1,1 @@
-#Scientific calculator Web application using C and Python
+#Scientific calculator application using C and Python
